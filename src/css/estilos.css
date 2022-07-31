@@ -1,19 +1,17 @@
 body {
-    font-family: 'Outfit', sans-serif;
-    background-image: url(../imagens/fundo-site.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  background-image: url(../imagens/fundo-site.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
 }
 
 .cabecalho {
-    /*Todos os elementos filhos de cabeçalho
-      Obedecerão o padrão desta classe*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-top: 50px;
 }
 
 .cabecalho .titulo {
@@ -40,11 +38,11 @@ body {
 }
 
 .btn-seta {
-    background-color: white;
+    background-color: #FFF;
     width: 70px;
     height: 70px;
     border-radius: 50px;
-    border: none;
+    border: 0;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -55,22 +53,20 @@ body {
 }
 
 .btn-seta:hover {
-    background-color: #8351f3;
+    background-color: #8351FE;
 }
 
 .cartao {
-    opacity: 0;
     background-color: blueviolet;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
-    border-radius: 10px;
     padding: 12px;
+    border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: opacity 0.3s ease-in-out;
-    opacity: 0;
 }
 
 .cartao.selecionado {
@@ -79,30 +75,29 @@ body {
 }
 
 .fundo-1 {
-    background-image: url(../imagens/fundo-card-1.jpg);
-    background-repeat: no-repeat;
+    background: url(../imagens/fundo-card-1.jpg) no-repeat;
 }
 
 .fundo-2 {
-    background-image: url(../imagens/fundo-card-2.jpg);
-    background-repeat: no-repeat;
-}
-.fundo-3 {
-    background-image: url(../imagens/fundo-card-3.jpg);
-    background-repeat: no-repeat;
+    background: url(../imagens/fundo-card-2.jpg) no-repeat;
 }
 
-.cartao .informacoes{
+.fundo-3 {
+    background: url(../imagens/fundo-card-3.jpg) no-repeat;
+}
+
+.cartao .informacoes {
     background-color: rgba(179, 177, 185, 0.7);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 8px 10px;
-    color: white;
-    border-radius: 10px 10px 0 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.cartao .informacoes .nome{
+.cartao .informacoes .nome {
+    color: #f1ecff;
     font-size: 22px;
 }
 
@@ -117,7 +112,7 @@ body {
     text-align: center;
 }
 
-.cartao .container-imagem img {
+.cartao .imagem-pokemon {
     max-width: 100%;
     max-height: 280px;
     padding: 20px;
@@ -125,7 +120,8 @@ body {
 
 .cartao .descricao {
     background: rgba(255, 255, 255, 0.8);
-    border-radius: 0 0 10px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .cartao .descricao .titulo {
@@ -139,6 +135,6 @@ body {
     font-size: 14px;
     padding: 12px;
     text-align: justify;
-    max-height: 120px;
+    max-height: 115px;
     overflow-y: auto;
 }

@@ -86,6 +86,10 @@ body {
     background: url(../imagens/fundo-card-3.jpg) no-repeat;
 }
 
+.fundo-4 {
+    background: url(../imagens/fundo-card-3.jpg) no-repeat;
+}
+
 .cartao .informacoes {
     background-color: rgba(179, 177, 185, 0.7);
     display: flex;
